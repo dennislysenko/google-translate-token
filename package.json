@@ -1,6 +1,6 @@
 {
   "name": "google-translate-token-without-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that generates the necessary token to use the Google Translate API for free, without Node dependencies so it can be webpacked into a browser app",
   "main": "index.js",
   "scripts": {

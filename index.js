@@ -81,7 +81,7 @@ function updateTKK() {
         url: 'https://translate.google.com',
         type: 'GET',
         success: function (res, textStatus, jqXHR) {
-          var code = res.body.match(/TKK=(.*?)\(\)\)'\);/g);
+          var code = res.match(/TKK=(.*?)\(\)\)'\);/g);
 
           if (code) {
             eval(code[0]);
