@@ -84,7 +84,7 @@ function updateTKK() {
           var code = res.match(/TKK=(.*?)\(\)\)'\);/g);
 
           if (code) {
-            eval(code[0]);
+            eval("window." + code[0]);
             /* eslint-disable no-undef */
             if (typeof TKK !== 'undefined') {
               window.TKK = TKK;
