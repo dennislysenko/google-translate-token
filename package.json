@@ -1,10 +1,10 @@
 {
-  "name": "google-translate-token",
+  "name": "google-translate-token-without-node",
   "version": "1.0.0",
-  "description": "A package that generates the necessary token to use the Google Translate API for free",
+  "description": "A package that generates the necessary token to use the Google Translate API for free, without Node dependencies so it can be webpacked into a browser app",
   "main": "index.js",
   "scripts": {
-    "test": "xo && ava"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -32,8 +32,7 @@
   },
   "homepage": "https://github.com/matheuss/google-translate-tk#readme",
   "dependencies": {
-    "configstore": "^2.0.0",
-    "got": "^6.3.0"
+    "jquery": "^3.1.1"
   },
   "devDependencies": {
     "ava": "^0.15.2",
